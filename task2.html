@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nav Bar</title>
+     <style>
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+               background-color: white;
+               padding: 40px;
+          }
+          .container {
+               display: flex;
+               justify-content: space-around;
+               margin-top: 30px;
+          }
+
+          .Lcontainer,
+          .Rcontainer {
+               text-align: center;
+          }
+
+          .Vnav {
+               width: 200px;
+               background-color: #d0ecf8;
+               padding: 0;
+               border: none;
+               text-align: left;
+               margin: 5px;
+          }
+
+          .Vnav a {
+               display: block;
+               text-decoration: none;
+               color: blue;
+               padding: 12px;
+               font-size: 18px;
+          }
+
+          .navV {
+               border: 1px solid black;
+               margin: 10px;
+          }
+
+
+          .Vnav a:first-child {
+               background-color: orange;
+               color: white;
+               font-weight: bold;
+          }
+          .navH {
+               border: 1px solid black;
+               margin: 10px;
+          }
+          .Hnav {
+               display: flex;
+               border: none;
+               background-color: #ddd;
+               width: fit-content;
+               margin: 4px
+          }
+
+          .Hnav a {
+               text-decoration: none;
+               padding: 12px 20px;
+               font-size: 18px;
+               color: blue;
+               border-left: 1px solid gray;
+          }
+
+          .Hnav a:first-child {
+               background-color: gray;
+               color: white;
+               font-weight: bold;
+               border-left: none;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="Lcontainer">
+               <h3>Vertical Navigation Bar</h3>
+               <div class="navV">
+                    <div class="Vnav">
+                         <a href="#">Home</a>
+                         <a href="#">Java</a>
+                         <a href="#">CSS</a>
+                         <a href="#">HTML</a>
+                         <a href="#">Bootstrap</a>
+                    </div>
+               </div>
+          </div>
+
+          <div class="Rcontainer">
+               <h3>Horizontal Navigation Bar</h3>
+               <div class="navH">
+                    <div class="Hnav">
+                         <a href="#">Home</a>
+                         <a href="#">Java</a>
+                         <a href="#">HTML</a>
+                         <a href="#">CSS</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>
